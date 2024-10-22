@@ -4,11 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maker Page</title>
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <div><h1>The Word Search</h1></div>
-      <div>
+      <div class="head-title"><h1>The Word Search</h1></div>
+      <div class="head-body">
         Make your own word search game on any topic you like, simply by
         providing between 10 and 30 words. Once submitted, your puzzle will be
         instantly playable on-line as well as easily printed, so you can share
@@ -20,123 +24,124 @@
       <div class="title">
         <label for="title">Title</label>
         <div>
-          <input type="text" id="title" />
+          <input type="text" id="title" required />
         </div>
       </div>
 
       <div class="desc">
         <label for="desc">Description</label>
         <div>
-          <input type="text" id="desc" />
+          <input type="text" id="desc" required />
         </div>
       </div>
 
       <div class="list">
-        <label for="list">Word List</label>
-        <div>
+        <div class="list-title">Word List</div>
+        <div class="list-content">
           Between 10 and 30 words. Puzzles are randomly generated using a
           selection of your words at play time.
         </div>
         <div class="list-row row-0">
-          <div class="list-block" data-index="00"></div>
-          <div class="list-block" data-index="01"></div>
-          <div class="list-block" data-index="02"></div>
-          <div class="list-block" data-index="03"></div>
-          <div class="list-block" data-index="04"></div>
+          <div><input type="text" class="list-block" data-index="00" /></div>
+          <div><input type="text" class="list-block" data-index="01" /></div>
+          <div><input type="text" class="list-block" data-index="02" /></div>
+          <div><input type="text" class="list-block" data-index="03" /></div>
+          <div><input type="text" class="list-block" data-index="04" /></div>
         </div>
         <div class="list-row row-1">
-          <div class="list-block" data-index="10"></div>
-          <div class="list-block" data-index="11"></div>
-          <div class="list-block" data-index="12"></div>
-          <div class="list-block" data-index="13"></div>
-          <div class="list-block" data-index="14"></div>
+          <div><input type="text" class="list-block" data-index="10" /></div>
+          <div><input type="text" class="list-block" data-index="11" /></div>
+          <div><input type="text" class="list-block" data-index="12" /></div>
+          <div><input type="text" class="list-block" data-index="13" /></div>
+          <div><input type="text" class="list-block" data-index="14" /></div>
         </div>
         <div class="list-row row-2">
-          <div class="list-block" data-index="20"></div>
-          <div class="list-block" data-index="21"></div>
-          <div class="list-block" data-index="22"></div>
-          <div class="list-block" data-index="23"></div>
-          <div class="list-block" data-index="24"></div>
+          <div><input type="text" class="list-block" data-index="20" /></div>
+          <div><input type="text" class="list-block" data-index="21" /></div>
+          <div><input type="text" class="list-block" data-index="22" /></div>
+          <div><input type="text" class="list-block" data-index="23" /></div>
+          <div><input type="text" class="list-block" data-index="24" /></div>
         </div>
         <div class="list-row row-3">
-          <div class="list-block" data-index="30"></div>
-          <div class="list-block" data-index="31"></div>
-          <div class="list-block" data-index="32"></div>
-          <div class="list-block" data-index="33"></div>
-          <div class="list-block" data-index="34"></div>
+          <div><input type="text" class="list-block" data-index="31" /></div>
+          <div><input type="text" class="list-block" data-index="30" /></div>
+          <div><input type="text" class="list-block" data-index="32" /></div>
+          <div><input type="text" class="list-block" data-index="33" /></div>
+          <div><input type="text" class="list-block" data-index="34" /></div>
         </div>
         <div class="list-row row-4">
-          <div class="list-block" data-index="40"></div>
-          <div class="list-block" data-index="41"></div>
-          <div class="list-block" data-index="42"></div>
-          <div class="list-block" data-index="43"></div>
-          <div class="list-block" data-index="44"></div>
+          <div><input type="text" class="list-block" data-index="40" /></div>
+          <div><input type="text" class="list-block" data-index="41" /></div>
+          <div><input type="text" class="list-block" data-index="42" /></div>
+          <div><input type="text" class="list-block" data-index="43" /></div>
+          <div><input type="text" class="list-block" data-index="44" /></div>
         </div>
         <div class="list-row row-5">
-          <div class="list-block" data-index="50"></div>
-          <div class="list-block" data-index="51"></div>
-          <div class="list-block" data-index="52"></div>
-          <div class="list-block" data-index="53"></div>
-          <div class="list-block" data-index="54"></div>
+          <div><input type="text" class="list-block" data-index="50" /></div>
+          <div><input type="text" class="list-block" data-index="51" /></div>
+          <div><input type="text" class="list-block" data-index="52" /></div>
+          <div><input type="text" class="list-block" data-index="53" /></div>
+          <div><input type="text" class="list-block" data-index="54" /></div>
         </div>
         <div class="list-row row-6">
-          <div class="list-block" data-index="60"></div>
-          <div class="list-block" data-index="61"></div>
-          <div class="list-block" data-index="62"></div>
-          <div class="list-block" data-index="63"></div>
-          <div class="list-block" data-index="64"></div>
+          <div><input type="text" class="list-block" data-index="60" /></div>
+          <div><input type="text" class="list-block" data-index="61" /></div>
+          <div><input type="text" class="list-block" data-index="62" /></div>
+          <div><input type="text" class="list-block" data-index="63" /></div>
+          <div><input type="text" class="list-block" data-index="64" /></div>
         </div>
       </div>
 
       <div class="subject">
         <div>
-          <div>Subject</div>
+          <div class="subject-title">Subject</div>
           <input type="radio" id="personal" name="personal" value="personal" />
           <label for="personal">Personal</label>
-        </div>
-        <div>
           <input
             type="radio"
             id="non-personal"
-            name="non-personal"
+            name="personal"
             value="non-personal"
           />
           <label for="non-personal">Non-Personal (recommended)</label>
         </div>
+        <!-- 라디오 버튼 택 1을 하려면 name 이 같아야 한다. -->
 
         <div class="submit">
-          <button type="submit">Submit</button>
+          <button type="submit" class="submit-btn">Submit</button>
         </div>
       </div>
     </main>
     <footer>
-      <div>Instructions</div>
-      <div>
-        <ul>
-          <li>
-            To create a word search puzzle you must supply a word list of at
-            least 10 words.
-          </li>
-          <li>
-            The word list should be based on a single theme or topic. For
-            example a television show or a movie you enjoy.
-          </li>
-          <li>
-            Words can only contain the letters a-z and a maximum of two spaces
-            or dashes. Spaces and dashes will be removed when words are added to
-            the word search grid.
-          </li>
-          <li>Words can have a maximum length of 14 letters</li>
-          <li>
-            All puzzles created will remain on the site for at least 30 days,
-            but the very best puzzles may be permanently added to our
-            collection.
-          </li>
-          <li>
-            Do not include any personally identifiable information in your
-            puzzles
-          </li>
-        </ul>
+      <div class="inst">
+        <div class="inst-title">Instructions</div>
+        <div class="inst-content">
+          <ul>
+            <li>
+              To create a word search puzzle you must supply a word list of at
+              least 10 words.
+            </li>
+            <li>
+              The word list should be based on a single theme or topic. For
+              example a television show or a movie you enjoy.
+            </li>
+            <li>
+              Words can only contain the letters a-z and a maximum of two spaces
+              or dashes. Spaces and dashes will be removed when words are added
+              to the word search grid.
+            </li>
+            <li>Words can have a maximum length of 14 letters</li>
+            <li>
+              All puzzles created will remain on the site for at least 30 days,
+              but the very best puzzles may be permanently added to our
+              collection.
+            </li>
+            <li>
+              Do not include any personally identifiable information in your
+              puzzles
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
