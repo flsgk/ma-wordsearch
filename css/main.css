@@ -65,4 +65,22 @@
   font-weight: bold;
   font-size: 20px;
   border: none;
+  cursor: pointer;
+}
+
+.link-wrapper {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-button {
+  width: 1000px;
+  height: 50px;
+  background-color: lightpink;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
 }
